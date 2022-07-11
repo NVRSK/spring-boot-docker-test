@@ -26,7 +26,7 @@ dockerRun {
 	name "${project.name}"
 	image "${project.name}:${project.version}"
 	// port <port available outside> : <port of app in the container>
-	ports '81:8080'
+	ports '8080:8080'
 	// 'true' to remove container after stop
 	clean true
 }
