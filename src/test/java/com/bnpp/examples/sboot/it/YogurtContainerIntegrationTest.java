@@ -28,7 +28,7 @@ public class YogurtContainerIntegrationTest {
     */
 
     @Test
-    public void testYogurtContainer() throws Exception {
+    public void testYogurtContainer() {
         GenericContainer yogurtContainer = new GenericContainer(new ImageFromDockerfile()
                 .withDockerfile(FileSystems.getDefault().getPath(".", "Dockerfile")))
                 .withExposedPorts(CONTAINER_PORT)

@@ -26,7 +26,7 @@ class SpringBootTestApplicationTests {
     private TestRestTemplate restTemplate;
 
     @Test
-    void contextLoads() throws Exception {
+    void contextLoads() {
         assertThat(oController).isNotNull();
         String reply = this.restTemplate.getForObject("http://localhost:" + port + "/yogurt", String.class);
         log.info("Service reply: [" + reply + "]");
